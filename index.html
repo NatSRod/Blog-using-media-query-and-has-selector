@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; background-color: #F4D04E; border: 2px solid #F4D04E;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .container{
+      max-width: 1440px;
+      height: 100vh;
+      background-color: #F4D04E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: figtree, serif;
+    }
+    .panel{
+      width: 384px;
+      height: 522px;
+      margin: 0 auto;
+      border: 2px solid black;
+      border-radius: 20px;
+      background-color: white;
+      padding: 24px;
+      box-shadow: 10px 10px;
+      transition: box-shadow 0.3s;
+    }
+    body:has(h2:hover) .panel {
+      box-shadow: 15px 15px;
+    }
+    .panel img{
+      border-radius: 10px;
+      margin-bottom: 24px;
+    }
+    .panel h4{
+      background-color: #F4D04E;
+      padding: 4px 12px;
+      display: inline;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 800;
+      
+    }
+    .panel h5{
+      margin: 12px 0;
+      font-weight: 500;
+      font-size: 14px;
+    }
+    .panel h2{
+      font-weight: 900;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+    .panel h2:hover{
+      color:#F4D04E;
+    }
+
+    .panel p{
+      font-size: 16px;
+      color: hsl(0, 0%, 50%);
+      margin-bottom: 24px;
+    }
+    .profile{
+      display: flex;
+      height: 32px;
+      align-items: center;
+      
+    }
+    #icon{
+      margin: 0 auto;
+      width: 32px;
+      height: 32px;
+      vertical-align: middle;
+    }
+    .profile h3{
+      width: 100%;
+      height: 32px;
+      font-size: 14px;
+      font-weight: 800;
+      margin: 0 12px;
+      position: relative;
+      top: 25%;
+    }
+    @media (max-width:376px){
+      .panel{
+      max-width: 327px;
+      max-height: 501px;
+      margin: 0 auto;
+      }
+      .panel img{
+      width: 279px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+    .panel h4{
+      font-size: 12px;
+    }
+    .panel h2{
+      font-size: 20px;
+    }
+    .panel h5{
+      font-size: 12px;;
+    }
+    .panel p{
+      font-size: 14px;
+    }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="panel">
+      <img src="assets/images/illustration-article.svg" alt="">
+      <h4>Learning</h4>
+      <h5>Published 21 Dec 2023</h5>
+      <h2>HTML & CSS foundations</h2>
+      <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <div class="profile">
+        <img id="icon" src="assets/images/image-avatar.webp" alt="">
+        <h3>Greg Hooper</h3>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/natalia-rodriguez-1555002ba/">Natalia Rodriguez</a>.
+  </div>
+</body>
+</html>
